@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Touch a file in ~/Documents
+
+touch ~/Documents/.poker
+
+if [ $? -eq "0" ]; then
+    echo  "Document is online"
+    echo 
+    echo  "00FF00"
+else
+    echo  "Document is offline"
+    echo 
+    echo  "FF0000"
+fi

@@ -1,0 +1,30 @@
+#!/bin/bash
+###############################################################################
+# If spotify isn't running, start it and play. When running toggle play/plause
+###############################################################################
+
+spotify_playpause() {
+  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause &>/dev/null
+}
+
+spotify_start() {
+  /usr/bin/spotify &>/dev/null </dev/null &
+}
+
+spotify_play() {
+  spotify_playpause || spotify_start
+}
+
+spotify_prev() {
+  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+}
+
+spotify_next() {
+  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+}
+
+spotify_stop() {
+  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
+}
+
+spotify_$1
