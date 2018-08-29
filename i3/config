@@ -178,15 +178,6 @@ assign [class="^Eclipse$"] → $wsdev
 
 for_window [class="Spotify"] move to workspace $wstest
 
-# Default programs
-set $browser "firefox"
-
-# Autostart
-# eclipse goes here
-exec --no-startup-id i3-msg 'workspace $wsweb; exec $browser'
-
-exec --no-startup-id nm-applet
-
 # Pulseauido
 exec --no-startup-id start-pulseaudio-x11
 # Wallpaper
@@ -268,17 +259,13 @@ bindsym Ctrl+$mod+n exec --no-startup-id ~/.i3/bin/spotify_ctl next
 bindsym Ctrl+$mod+space exec --no-startup-id ~/.i3/bin/spotify_ctl play
 bindsym XF86AudioStop exec --no-startup-id ~/.i3/bin/spotify_ctl stop
 
-#######################################################################
-# automatically start i3-config-wizard to offer the user to create a
-# keysym-based config which used their favorite modifier (alt or windows)
-#
-# i3-config-wizard will not launch if there already is a config file
-# in ~/.i3/config.
-#
-# Please remove the following exec line:
-#######################################################################
-#exec i3-config-wizard
 
+# Default programs
+set $browser "firefox"
 
+# Autostart
+exec --no-startup-id i3-msg 'workspace $wsweb; exec $browser'
+
+exec_always --no-startup-id nm-applet
 
 
