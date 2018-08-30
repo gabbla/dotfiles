@@ -240,11 +240,11 @@ bar {
 # Power managment
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift-s) shutdown
 mode "$mode_system" {
-	bindsym l exec --no-startup-id i3exit lock, mode "default"
-	bindsym e exec --no-startup-id i3exit logout, mode "default"
-	bindsym s exec --no-startup-id i3exit suspend, mode "default"
-	bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-	bindsym r exec --no-startup-id i3exit reboot, mode "default"
+	bindsym l exec --no-startup-id ~/.dotfiles/i3/bin/exit.sh lock, mode "default"
+	bindsym e exec --no-startup-id ~/.dotfiles/i3/bin/exit.sh logout, mode "default"
+	bindsym s exec --no-startup-id ~/.dotfiles/i3/bin/exit.sh suspend, mode "default"
+	bindsym h exec --no-startup-id ~/.dotfiles/i3/bin/exit.sh hibernate, mode "default"
+	bindsym r exec --no-startup-id ~/.dotfiles/i3/bin/exit.sh reboot, mode "default"
 	bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
 	# back to normal
@@ -254,10 +254,10 @@ mode "$mode_system" {
 bindsym $mod+Pause mode "$mode_system"
 
 # Spotify
-bindsym Ctrl+$mod+p exec --no-startup-id ~/.i3/bin/spotify_ctl prev
-bindsym Ctrl+$mod+n exec --no-startup-id ~/.i3/bin/spotify_ctl next
-bindsym Ctrl+$mod+space exec --no-startup-id ~/.i3/bin/spotify_ctl play
-bindsym XF86AudioStop exec --no-startup-id ~/.i3/bin/spotify_ctl stop
+bindsym Ctrl+$mod+p exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl prev
+bindsym Ctrl+$mod+n exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl next
+bindsym Ctrl+$mod+space exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl play
+bindsym XF86AudioStop exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl stop
 
 
 # Default programs
