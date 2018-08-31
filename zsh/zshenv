@@ -1,0 +1,3 @@
+###############################################################################
+# Source local configurations
+if [ -e ~/.zshenv.local ]; then source ~/.zshenv.local; fi
