@@ -1,8 +1,9 @@
 #!/bin/bash
 
 lock() {
-	index=$(( $RANDOM % 3 + 1 ))
-	i3lock -efdI 15 -i ~/wallpapers/wallpaper$index.png
+	#index=$(( $RANDOM % 3 + 1 ))
+	#i3lock -efdI 15 -i ~/wallpapers/wallpaper$index.png
+	betterlockscreen --lock
 }
 
 case "$1" in
