@@ -196,6 +196,10 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume $sink_i
 bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume $sink_index -5%; mplayer /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-volume $sink_index 0%
 
+
+# Gotop
+bindsym $mod+Shift+g exec --no-startup-id $terminal -e gotop
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -268,4 +272,5 @@ exec --no-startup-id i3-msg 'workspace $wsweb; exec $browser'
 
 exec_always --no-startup-id nm-applet
 
-
+# Background
+exec --no-startup-id betterlockscreen -w

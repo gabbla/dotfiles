@@ -6,4 +6,4 @@ My i3 installation depends on the following packages:
 - rofi
 - numlockx
 - nm-applet
-
+- [gotop](https://github.com/cjbassi/gotop)
