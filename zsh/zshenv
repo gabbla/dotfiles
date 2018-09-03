@@ -3,7 +3,11 @@
 
 bindkey '^ ' autosuggest-accept
 
-# Aliases
+## Aliases {{{
 
 alias ll='ls -all'
 alias dot='cd ~/.dotfiles && ll'
+
+## }}}
+
+export TERM=screen-256color
