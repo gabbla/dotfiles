@@ -66,6 +66,7 @@ plugins=(
   git
   colored-man-pages
   zsh-autosuggestions
+  calc
 )
 
 source $ZSH/oh-my-zsh.sh

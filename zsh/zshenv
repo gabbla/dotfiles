@@ -7,7 +7,7 @@ bindkey '^ ' autosuggest-accept
 
 alias ll='ls -all'
 alias dot='cd ~/.dotfiles && ll'
-
+alias opt='cd /opt'
 mdd() { mkdir -p $1 && cd $1 }
 
 ## }}}
