@@ -269,8 +269,8 @@ set $browser "firefox"
 
 # Autostart
 exec --no-startup-id i3-msg 'workspace $wsweb; exec $browser'
-
-exec_always --no-startup-id nm-applet
+exec --no.startup-id i3-msg 'workspace $wstest; exec spotify'
+exec_alway --no-startup-id nm-applet
 
 # Background
 exec --no-startup-id betterlockscreen -w

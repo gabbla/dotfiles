@@ -1,3 +1,9 @@
-###############################################################################
-# Source local configurations
-if [ -e ~/.zshenv.local ]; then source ~/.zshenv.local; fi
+
+# zsh-atuosuggestions keybindings
+
+bindkey '^ ' autosuggest-accept
+
+# Aliases
+
+alias ll='ls -all'
+alias dot='cd ~/.dotfiles && ll'
