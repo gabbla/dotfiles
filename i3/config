@@ -16,7 +16,6 @@ set $mod Mod4
 set $mainscreen	DP1-2
 #set $sidescreen eDP1
 
-
 # is used in the bar {} block below.
 #font pango:monospace 8
 
@@ -270,7 +269,7 @@ set $browser "firefox"
 # Autostart
 exec --no-startup-id i3-msg 'workspace $wsweb; exec $browser'
 exec --no.startup-id i3-msg 'workspace $wstest; exec spotify'
-exec_alway --no-startup-id nm-applet
+exec_always --no-startup-id nm-applet
 
 # Background
 exec --no-startup-id betterlockscreen -w
