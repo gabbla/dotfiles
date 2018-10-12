@@ -9,12 +9,13 @@ alias ll="ls -all"
 alias dot="cd ~/.dotfiles && ll"
 alias opt="cd /opt"
 alias prj="cd ~/projects"
+alias sy="cd /opt/swi/yocto"
 mdd() { mkdir -p $1 && cd $1 }
 
 ## }}}
 
 export TERM=xterm-256color
 
-export EDITOR="vim"
+export EDITOR="nvim"
 
 source ~/cntlm_proxy
