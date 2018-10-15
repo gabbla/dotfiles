@@ -1,0 +1,8 @@
+# Clock
+set-window-option -g clock-mode-colour colour80
+
+tm_battery="#(~/.dotfiles/i3/bin/battery)"
+tm_date="%R %d %b"
+tm_host="#h"
+
+set -g status-right $tm_host' '$tm_battery' '$tm_date
