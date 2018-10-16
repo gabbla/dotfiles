@@ -28,10 +28,10 @@ bind-key - split-window -v
 set-option -g display-panes-active-colour $tm_color_active
 set-option -g display-panes-colour $tm_color_inactive
 
-set-window-option -g clock-mode-colour colour80
+#set-window-option -g clock-mode-colour colour80
 
-tm_battery="#[fg=$tm_color_feature]#(~/.dotfiles/i3/bin/battery)"
-tm_date="#[fg=$tm_color_feature,bold]%R %d %b"
+tm_battery="#[fg=colour196]#(~/.dotfiles/i3/bin/battery)"
+tm_date="#[fg=$tm_color_feature,bold]%R #[fg=colour190,none]%d %b %Y"
 tm_host="#[fg=colour40]#h"
 
 set -g status-right $tm_host' '$tm_battery' '$tm_date
