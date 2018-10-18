@@ -1,10 +1,15 @@
 #!/bin/bash
 
-online=$( cat /sys/class/power_supply/AC/online )
-level=$( cat /sys/class/power_supply/BAT0/capacity )
 
-if [ -z $level ]; then exit 0; fi
-if [ $online == 1 ]; then echo -n "AC "; fi
+level=$(cat /sys/class/power_supply/BAT0/capacity)
+online=$(cat /sys/class/power_supply/AC/online)
 
+if [ $online == 1 ]; then echo -n " ";
+elif [ $level -gt 88 ]; then echo -n "";
+elif [ $level -gt 88 ]; then echo -n "";
+elif [ $level -gt 62 ]; then echo -n "";
+elif [ $level -gt 37 ]; then echo -n "";
+elif [ $level -gt 0 ]; then echo -n "";
+fi
 
 echo "${level}%"

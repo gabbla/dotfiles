@@ -57,6 +57,11 @@ ZSH_THEME="amuse"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=~/.dotfiles/zsh/oh-my-zsh
 
+if [ "${ZSH_NO_TMUX}" != "true" ]; then
+  ZSH_TMUX_AUTOSTART=true
+  ZSH_TMUX_AUTOCONNECT=false
+fi
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -67,7 +72,7 @@ plugins=(
   colored-man-pages
   zsh-autosuggestions
   calc
-  zsh-syntax-highlighting
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -100,3 +105,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/italia.texa.org/gzampieri/.vimpkg/bin"

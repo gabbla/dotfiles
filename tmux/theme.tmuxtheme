@@ -1,0 +1,43 @@
+# Clock
+
+tm_color_active=colour40
+tm_color_inactive=colour3
+tm_color_feature=colour39
+
+tm_color_background=colour237
+
+# Status bar dims
+set -g status-right-length 150
+
+# Refresh interval
+set -g status-interval 5
+
+# Status bar color
+set-option -g status-fg $tm_color_active
+set-option -g status-bg $tm_color_background
+set-option -g status-attr default
+
+# Default window
+set-window-option -g window-status-fg $tm_color_inactive
+set-window-option -g window-status-bg default
+set -g window-status-format "#I #W"
+
+# Active window title colors
+set-window-option -g window-status-format '#[fg=colour15,bg=colour33] #I #[fg=colour16,bg=colour31] #W '
+set-window-option -g window-status-current-format '#[fg=colour15,bg=colour1,bold] #I #[fg=colour16,bg=colour160,none] #W '
+
+# Remap split to | and - 
+bind-key | split-window -h
+bind-key - split-window -v
+
+# pane number display
+set-option -g display-panes-active-colour $tm_color_active
+set-option -g display-panes-colour $tm_color_inactive
+
+#set-window-option -g clock-mode-colour colour80
+
+tm_battery="#[fg=colour196]#(~/.dotfiles/i3/bin/battery)"
+tm_date="#[fg=$tm_color_feature,bold]%R #[fg=colour190,none]%d %b %Y"
+tm_host="#[fg=colour40,bold]#(echo $USER)#[fg=colour42,none]@#h"
+
+set -g status-right $tm_host' '$tm_battery' '$tm_date
