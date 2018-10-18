@@ -6,6 +6,12 @@ tm_color_feature=colour39
 
 tm_color_background=colour237
 
+# Status bar dims
+set -g status-right-length 150
+
+# Refresh interval
+set -g status-interval 5
+
 # Status bar color
 set-option -g status-fg $tm_color_active
 set-option -g status-bg $tm_color_background
@@ -32,6 +38,6 @@ set-option -g display-panes-colour $tm_color_inactive
 
 tm_battery="#[fg=colour196]#(~/.dotfiles/i3/bin/battery)"
 tm_date="#[fg=$tm_color_feature,bold]%R #[fg=colour190,none]%d %b %Y"
-tm_host="#[fg=colour40]#h"
+tm_host="#[fg=colour40,bold]#(echo $USER)#[fg=colour42,none]@#h"
 
 set -g status-right $tm_host' '$tm_battery' '$tm_date
