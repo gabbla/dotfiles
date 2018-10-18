@@ -17,4 +17,4 @@ export TERM=xterm-256color
 
 export EDITOR="vim"
 
-source ~/cntlm_proxy
+#source ~/cntlm_proxy
