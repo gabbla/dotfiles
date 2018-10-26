@@ -18,4 +18,4 @@ export TERM=xterm-256color
 
 export EDITOR="nvim"
 
-source ~/cntlm_proxy
+#source ~/cntlm_proxy
