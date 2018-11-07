@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# gist by @rhthomas (https://gist.github.com/rhthomas/1c712f0f068c6730d52383e70d530080)
+# Color added by @gabbla
+# creates disk usage status bar for i3blocks 
+# eg. [███       ] 28%
+
+import os
+
+def getColor(used):
+    if used <= 50:
+        return "#6BF442" 
+    elif used <= 90:
+        return "#F1F442"
+    else:
+        return "#F44242"
+
+# block character
+block = u"\u25AA"
+
+# get disk usage
+disk = int(os.popen("df -h --output='pcent' / | tail -n1 | tr -s ' ' | tr -s '\n'").read()[:-2])
+
+# round up the number of blocks
+used = round(float(disk)/10)
+
+# print blocks
+string = "[" + block*used + " "*(10-used) + "] " + str(disk) + "%"
+color = getColor(disk)
+print(string)
+print("")
+print(color)
