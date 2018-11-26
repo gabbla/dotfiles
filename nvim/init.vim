@@ -22,6 +22,10 @@ call plug#end()
 syntax on
 colorscheme monokai
 
+" Show whitechars
+:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+:set list
+
 " Hybrid number mode
 set number relativenumber
 
