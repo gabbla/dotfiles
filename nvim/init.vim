@@ -19,15 +19,13 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'pboettch/vim-cmake-syntax'
 call plug#end()
 
+" Theme managment
 syntax on
 colorscheme monokai
 
-" Show whitechars
-:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-:set list
+" Source settings from settings.vim
+source ~/.dotfiles/nvim/vimrc/settings.vim
 
-" Hybrid number mode
-set number relativenumber
 
 " Start NerdTree
 autocmd vimenter * NERDTree
