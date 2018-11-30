@@ -13,6 +13,7 @@ set list		" show invisible chars
 set listchars=eol:¬,tab:▸\ ,trail:·,nbsp:⎵ " replace whitechars
 set number relativenumber " Hybrid number mode
 set showmode		" show the current mode
-set tabstop=4		" Default to 8
+set tabstop=2		" Default to 8
+set shiftwidth=4
 set showcmd         " show command line
 
