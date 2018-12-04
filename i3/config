@@ -44,7 +44,7 @@ set $right l
 floating_modifier $mod
 
 # start a terminal
-set $terminal roxterm
+set $terminal kitty 
 #bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec $terminal
 #bindsym $mod+Return exec $terminal -e zsh
@@ -197,7 +197,7 @@ exec_always --no-startup-id numlockx on
 set $sink_index 0
 bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume $sink_index +5%; mplayer /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
 bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume $sink_index -5%; mplayer /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-volume $sink_index 0%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink_index toggle
 
 
 # Gotop
@@ -275,6 +275,7 @@ set $browser "firefox"
 exec --no-startup-id i3-msg 'workspace $wsweb; exec $browser'
 exec --no-startup-id i3-msg 'workspace $wstest; exec spotify'
 exec_always --no-startup-id nm-applet
+exec_always --no-startup-id blueman-applet
 exec --no-startup-id "udiskie -t"
 # Background
 exec --no-startup-id betterlockscreen -u ~/wallpapers
