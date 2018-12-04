@@ -193,12 +193,27 @@ exec sleep 2 && xrandr --output eDP1 --mode 1920x1080 --output DP1-2 --mode 1920
 exec_always --no-startup-id numlockx on
 #--------------------------
 
+################################################################################
+# Tip: use xmodmap to see the available keys
+# Example (xmodmap -pxe):
+# 	keycode 232 = XF86MonBrightnessDown NoSymbol XF86MonBrightnessDown
+# 	keycode 233 = XF86MonBrightnessUp NoSymbol XF86MonBrightnessUp
+# 	keycode 237 = XF86KbdBrightnessDown NoSymbol XF86KbdBrightnessDown
+# 	keycode 238 = XF86KbdBrightnessUp NoSymbol XF86KbdBrightnessUp
+#
+# Now run xev and press the key and check for the associated keycode
+
 # Audio volume up/down
 set $sink_index 0
 bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume $sink_index +5%; mplayer /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
 bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume $sink_index -5%; mplayer /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink_index toggle
 
+# Brightness up/down
+bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 10"
+bindsym XF86MonBrightnessUp   exec --no-startup-id "xbacklight -inc 10"
+
+################################################################################
 
 # Gotop
 bindsym $mod+Shift+g exec --no-startup-id $terminal -e gotop
