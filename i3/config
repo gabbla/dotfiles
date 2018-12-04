@@ -291,7 +291,7 @@ exec --no-startup-id i3-msg 'workspace $wsweb; exec $browser'
 exec --no-startup-id i3-msg 'workspace $wstest; exec spotify'
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
-exec_always --no-startup-id "udiskie -t"
+exec --no-startup-id "udiskie -t"
 # Background
 exec --no-startup-id betterlockscreen -u ~/wallpapers
 exec --no-startup-id betterlockscreen -w
