@@ -7,8 +7,9 @@ if [ $MUTE = "true" ]; then
 	echo ""
 else
 	if [ $LVL -eq 0 ]; then 
-		echo "$LVL"
+		echo -n  "$LVL"
 	else
-		echo "$LVL"
+		echo -n "$LVL"
 	fi
+	echo "%"
 fi
