@@ -26,4 +26,7 @@ ln -nfs ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 # kitty terminal
 ln -nfs ~/.dotfiles/kitty/ ~/.config/kitty
+
+# dunst 
+ln -nfs ~/.dotfiles/dunst/dunstrc ~/.config/dunst
 ```
