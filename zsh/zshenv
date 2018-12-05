@@ -9,8 +9,9 @@ alias ll="ls -all"
 alias dot="cd ~/.dotfiles && ll"
 alias opt="cd /opt"
 alias prj="cd ~/projects"
-alias sy="cd /opt/swi/yocto"
 mdd() { mkdir -p $1 && cd $1 }
+
+alias nettest='ping 8.8.8.8'
 
 ## }}}
 
