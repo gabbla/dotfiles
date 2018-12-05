@@ -23,4 +23,7 @@ ln -nfs ~/.dotfiles/nvim ~/.config/nvim
 
 # TMux
 ln -nfs ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+
+# kitty terminal
+ln -nfs ~/.dotfiles/kitty/ ~/.config/kitty
 ```
