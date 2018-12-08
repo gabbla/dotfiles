@@ -1,15 +1,27 @@
 #!/bin/bash
 
-
 level=$(cat /sys/class/power_supply/BAT0/capacity)
 online=$(cat /sys/class/power_supply/AC/online)
+
+
+COLOR_HIGH="#80f442"
+COLOR_MID="#f4e542"
+COLOR_LOW="#ff0000"
 
 if [ $online == 1 ]; then echo -n " ";
 elif [ $level -gt 88 ]; then echo -n "";
 elif [ $level -gt 88 ]; then echo -n "";
 elif [ $level -gt 62 ]; then echo -n "";
 elif [ $level -gt 37 ]; then echo -n "";
-elif [ $level -gt 0 ]; then echo -n "";
+elif [ $level -gt 0 ]; then echo -n ""; 
 fi
 
-echo "${level}%"
+echo " ${level}%"
+echo ""
+
+if [ $online == 0 ]; then
+    if [ $level -gt 50 ]; then echo $COLOR_HIGH;
+    elif [ $level -gt 25 ]; then echo $COLOR_MID;
+    else echo $COLOR_LOW;
+    fi
+fi
