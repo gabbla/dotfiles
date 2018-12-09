@@ -7,8 +7,10 @@ Plug 'morhetz/gruvbox'
 " C++
 Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+"
 " Tools
 Plug 'mileszs/ack.vim'
+Plug 'derekwyatt/vim-fswitch'
 
 " TODO sort
 Plug 'roxma/nvim-completion-manager'
@@ -41,6 +43,7 @@ let NERDTreeQuitOnOpen = 1
 source ~/.dotfiles/nvim/vimrc/nerdtree.vim
 source ~/.dotfiles/nvim/vimrc/ycm.vim
 source ~/.dotfiles/nvim/vimrc/ack.vim
+source ~/.dotfiles/nvim/vimrc/fswitch.vim
 
 
 " UltiSnips keybindings
