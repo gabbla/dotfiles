@@ -1,11 +1,16 @@
 call plug#begin()
 
 " Color themes
-Plug 'crusoexia/vim-monokai'
+" Plug 'crusoexia/vim-monokai'
+Plug 'morhetz/gruvbox'
 
 " C++
 Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+"
+" Tools
+Plug 'mileszs/ack.vim'
+Plug 'derekwyatt/vim-fswitch'
 
 " TODO sort
 Plug 'roxma/nvim-completion-manager'
@@ -21,7 +26,8 @@ call plug#end()
 
 " Theme managment
 syntax on
-colorscheme monokai
+colorscheme gruvbox 
+set background=dark " gruvbox dark mode
 
 " Source settings from settings.vim
 source ~/.dotfiles/nvim/vimrc/settings.vim
@@ -36,7 +42,8 @@ let NERDTreeQuitOnOpen = 1
 " Custom settings
 source ~/.dotfiles/nvim/vimrc/nerdtree.vim
 source ~/.dotfiles/nvim/vimrc/ycm.vim
-
+source ~/.dotfiles/nvim/vimrc/ack.vim
+source ~/.dotfiles/nvim/vimrc/fswitch.vim
 
 
 " UltiSnips keybindings
