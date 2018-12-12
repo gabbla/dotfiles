@@ -9,9 +9,12 @@ alias ll="ls -all"
 alias dot="cd ~/.dotfiles && ll"
 alias opt="cd /opt"
 alias prj="cd ~/projects"
+alias wrk="cd ~/workspaces"
 mdd() { mkdir -p $1 && cd $1 }
 
 alias nettest='ping 8.8.8.8'
+alias fn='find . -name'
+alias fd='find . -type d -name'
 
 ## }}}
 
