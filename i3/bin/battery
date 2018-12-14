@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# supply any argument to print the color for i3blocks
+
 level=$(cat /sys/class/power_supply/BAT0/capacity)
 online=$(cat /sys/class/power_supply/AC/online)
 
@@ -17,6 +19,10 @@ elif [ $level -gt 0 ]; then echo -n "";
 fi
 
 echo " ${level}%"
+
+# Ugly as hell, idc
+[ -z "$1" ] && exit
+
 echo ""
 
 if [ $online == 0 ]; then
