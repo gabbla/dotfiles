@@ -29,6 +29,9 @@ syntax on
 colorscheme gruvbox 
 set background=dark " gruvbox dark mode
 
+
+" Source shortcuts
+source ~/.dotfiles/nvim/vimrc/shortcuts.vim
 " Source settings from settings.vim
 source ~/.dotfiles/nvim/vimrc/settings.vim
 
