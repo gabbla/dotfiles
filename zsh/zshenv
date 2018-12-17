@@ -4,13 +4,14 @@
 bindkey '^ ' autosuggest-accept
 
 ## Aliases {{{
-
-alias ll="ls -all"
 alias dot="cd ~/.dotfiles && ll"
 alias opt="cd /opt"
 alias prj="cd ~/projects"
 alias wrk="cd ~/workspaces"
 mdd() { mkdir -p $1 && cd $1 }
+MDD() { TEMP=$(mktemp -d); cd $TEMP }
+now() { date +'%Y%m%d_%H_%M' }
+
 
 alias nettest='ping 8.8.8.8'
 alias fn='find . -name'
@@ -28,5 +29,22 @@ alias drmif='sudo docker image rm -f'
 export TERM=xterm-256color
 
 export EDITOR="nvim"
+
+prompt_svn() {
+    local rev branch
+    if in_svn; then
+        rev=$(svn_get_rev_nr)
+        branch=$(svn_get_branch_name)
+        echo -n " "
+        if [ `svn_dirty_choose_pwd 1 0` -eq 1 ]; then
+            #prompt_segment yellow black
+            echo -n "$rev@$branch"
+            echo -n "±"
+        else
+            #prompt_segment green black
+            echo -n "$rev@$branch"
+        fi
+    fi
+}
 
 #source ~/cntlm_proxy
