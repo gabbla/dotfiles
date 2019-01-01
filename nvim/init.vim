@@ -11,6 +11,7 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 " Tools
 Plug 'mileszs/ack.vim'
 Plug 'derekwyatt/vim-fswitch'
+Plug 'aklt/plantuml-syntax'
 
 " TODO sort
 Plug 'roxma/nvim-completion-manager'
