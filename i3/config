@@ -276,12 +276,27 @@ mode "$mode_system" {
 bindsym Control+Mod1+Delete mode "$mode_system"
 bindsym $mod+Pause mode "$mode_system"
 
+# Screen shortcut
+set $mode_display Use: internal (i), external (e), mirror (m), extend (x)
+mode "$mode_display" {
+    #bindsym i
+    bindsym e exec --no-startup-id ~/.dotfiles/i3/bin/display.sh e, mode "default"
+    bindsym i exec --no-startup-id ~/.dotfiles/i3/bin/display.sh i, mode "default"
+
+    # back to normal
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+bindsym Control+Shift+d mode "$mode_display"
+
 # Spotify
 bindsym Ctrl+$mod+p exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl prev
 bindsym Ctrl+$mod+n exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl next
 bindsym Ctrl+$mod+space exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl play
 bindsym XF86AudioStop exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl stop
 
+# Turn on Trust kb LED
+bindsym Ctrl+Shift+l exec --no-startup-id xset led named "Scroll Lock"
 
 # Default programs
 set $browser "firefox"
