@@ -17,3 +17,7 @@ set tabstop=4		" Default to 8
 set shiftwidth=4
 set showcmd         " show command line
 
+set scrolloff=10
+
+set wildmenu
+set wildmode=list:longest,full
