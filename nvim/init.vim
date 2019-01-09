@@ -12,6 +12,7 @@ Plug 'mileszs/ack.vim'
 Plug 'derekwyatt/vim-fswitch'
 Plug 'vim-airline/vim-airline'
 Plug 'aklt/plantuml-syntax'
+Plug 'kien/ctrlp.vim'
 
 " TODO sort
 Plug 'roxma/nvim-completion-manager'
