@@ -10,7 +10,6 @@ nnoremap <leader>F :Ack! '<C-r>0'<CR>
 " Search visual selction with ag
 vnoremap <leader>f y:Ack! '<C-r>0'<CR>
 
-
 " Close buffers without pain
 nnoremap <silent> <leader>x :bd<CR>
 
@@ -19,3 +18,6 @@ nnoremap <silent> <leader>n :bn<CR>
 
 " Prev buffer
 nnoremap <silent> <leader>p :bp<CR>
+
+" reload current file
+nnoremap <silent> <leader><Space> :e<CR>

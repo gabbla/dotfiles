@@ -6,7 +6,8 @@ Plug 'morhetz/gruvbox'
 " C++
 Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
-"
+" Markdown
+Plug 'suan/vim-instant-markdown'
 " Tools
 Plug 'mileszs/ack.vim'
 Plug 'derekwyatt/vim-fswitch'
@@ -45,10 +46,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let NERDTreeQuitOnOpen = 1
 
 " Custom settings
-source ~/.dotfiles/nvim/vimrc/nerdtree.vim
-source ~/.dotfiles/nvim/vimrc/ycm.vim
 source ~/.dotfiles/nvim/vimrc/ack.vim
 source ~/.dotfiles/nvim/vimrc/fswitch.vim
+source ~/.dotfiles/nvim/vimrc/instant-markdown.vim
+source ~/.dotfiles/nvim/vimrc/nerdtree.vim
+source ~/.dotfiles/nvim/vimrc/ycm.vim
 
 
 " UltiSnips keybindings
