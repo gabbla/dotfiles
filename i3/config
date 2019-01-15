@@ -282,6 +282,7 @@ mode "$mode_display" {
     #bindsym i
     bindsym e exec --no-startup-id ~/.dotfiles/i3/bin/display.sh e, mode "default"
     bindsym i exec --no-startup-id ~/.dotfiles/i3/bin/display.sh i, mode "default"
+    bindsym x exec --no-startup-id ~/.dotfiles/i3/bin/display.sh x, mode "default"
 
     # back to normal
 	bindsym Return mode "default"
