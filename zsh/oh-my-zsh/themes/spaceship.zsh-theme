@@ -1,0 +1,1 @@
+/home/italia.texa.org/gzampieri/.dotfiles/zsh/oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme
