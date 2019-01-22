@@ -314,6 +314,6 @@ exec --no-startup-id betterlockscreen -u ~/wallpapers
 exec --no-startup-id betterlockscreen -w
 
 # Switch kb layout with Alt + Shift
-setxkbmap -option grp:alt_shift_toggle us,it
+exec --no-startup-id 'setxkbmap -option grp:alt_shift_toggle us,it'
 # Bedroom keyboard backlight
 # exec --no-startup-id 'xset led named "Scroll Lock"'
