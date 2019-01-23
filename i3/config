@@ -300,6 +300,9 @@ bindsym XF86AudioStop exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl stop
 # Turn on Trust kb LED
 bindsym Ctrl+Shift+l exec --no-startup-id xset led named "Scroll Lock"
 
+# Screenshot
+bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+
 # Default programs
 set $browser "firefox"
 
