@@ -21,3 +21,6 @@ nnoremap <silent> <leader>p :bp<CR>
 
 " reload current file
 nnoremap <silent> <leader><Space> :e<CR>
+
+" undo all the changes in the current file
+nnoremap <silent> <leader>u :e!<CR>
