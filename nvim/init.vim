@@ -15,6 +15,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'aklt/plantuml-syntax'
 Plug 'kien/ctrlp.vim'
 
+" syntax
+Plug 'kergoth/vim-bitbake'
+Plug 'pboettch/vim-cmake-syntax'
+
 " TODO sort
 Plug 'roxma/nvim-completion-manager'
 Plug 'SirVer/ultisnips'
@@ -24,7 +28,6 @@ Plug 'wakatime/vim-wakatime'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'pboettch/vim-cmake-syntax'
 call plug#end()
 
 " Theme managment
