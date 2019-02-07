@@ -20,6 +20,16 @@ alias fd='find . -type d -name'
 alias gerp='grep'
 
 ## }}}
+################################################################################
+# fastboot Aliases
+################################################################################
+
+alias fastreboot='sudo fastboot reboot'
+alias fastspl='sudo fastboot flash spl'
+alias fastuboot='sudo fastboot flash uboot'
+alias fastdtb='sudo fastboot flash spl-os'
+alias fastkernel='sudo fastboot flash kernel'
+alias fastfs='sudo fastboot flash filesystem'
 
 ################################################################################
 # Docker sutff
