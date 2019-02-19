@@ -21,3 +21,5 @@ set scrolloff=10
 
 set wildmenu
 set wildmode=list:longest,full
+
+set noswapfile " disable swapfile
