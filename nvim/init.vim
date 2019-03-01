@@ -6,6 +6,7 @@ Plug 'morhetz/gruvbox'
 " C++
 Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'rhysd/vim-clang-format'
 " Markdown
 Plug 'suan/vim-instant-markdown'
 " Tools
@@ -50,6 +51,7 @@ let NERDTreeQuitOnOpen = 1
 
 " Custom settings
 source ~/.dotfiles/nvim/vimrc/ack.vim
+source ~/.dotfiles/nvim/vimrc/clang-format.vim
 source ~/.dotfiles/nvim/vimrc/fswitch.vim
 source ~/.dotfiles/nvim/vimrc/instant-markdown.vim
 source ~/.dotfiles/nvim/vimrc/nerdtree.vim
