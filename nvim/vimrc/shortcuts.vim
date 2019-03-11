@@ -24,3 +24,6 @@ nnoremap <silent> <leader><Space> :e<CR>
 
 " undo all the changes in the current file
 nnoremap <silent> <leader>u :e!<CR>
+
+" call make by pressing F9
+map <f9> :make<CR>
