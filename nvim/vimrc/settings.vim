@@ -23,3 +23,7 @@ set wildmenu
 set wildmode=list:longest,full
 
 set noswapfile " disable swapfile
+
+" Highlight extra whitespaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
