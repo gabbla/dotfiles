@@ -27,3 +27,6 @@ nnoremap <silent> <leader>u :e!<CR>
 
 " call make by pressing F9
 map <f9> :make<CR>
+
+" Clear highlighted search
+nmap <silent> // :nohlsearch<CR>
