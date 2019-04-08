@@ -21,8 +21,8 @@ set $mainscreen	DP1-2
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:AppleGaramond Sans 9 
-#font pango:DejaVu Sans 9 
+font pango:AppleGaramond Sans 9
+#font pango:DejaVu Sans 9
 
 for_window [class="kitty"] border pixel 0
 
@@ -45,7 +45,7 @@ set $right l
 floating_modifier $mod
 
 # start a terminal
-set $terminal kitty 
+set $terminal kitty
 #bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec $terminal
 bindsym Shift+$mod+Return exec $terminal -e bash
@@ -61,7 +61,7 @@ bindsym $mod+p exec --no-startup-id rofi -show window -config ~/.dotfiles/rofi/s
 bindsym $mod+Shift+s exec --no-startup-id teiler
 
 # start dmenu (a program launcher)
-#bindsym $mod+Shift+d exec rofi -show run 
+#bindsym $mod+Shift+d exec rofi -show run
 bindsym $mod+Shift+d exec i3-dmenu-desktop
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -299,18 +299,12 @@ bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures
 set $browser "firefox"
 
 # Autostart
-#exec --no-startup-id i3-msg 'workspace $wsweb; exec $browser'
-#exec --no-startup-id i3-msg 'workspace $wstest; exec spotify'
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
 exec --no-startup-id "udiskie -t"
-
 exec_always --no-startup-id ~/.dotfiles/polybar/launch.sh
+
 # Background
 exec --no-startup-id betterlockscreen -u ~/wallpapers
 exec --no-startup-id betterlockscreen -w
 
-# Switch kb layout with Alt + Shift
-exec --no-startup-id 'setxkbmap -option grp:alt_shift_toggle us,it'
-# Bedroom keyboard backlight
-# exec --no-startup-id 'xset led named "Scroll Lock"'
