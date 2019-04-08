@@ -252,15 +252,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar
-# It uses i3blocks
-bar {
-        status_command i3blocks -c ~/.dotfiles/i3/i3blocks.conf
-	position top
-	separator_symbol ">"
-	tray_padding 0
-}
-
 # Power managment
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift-s) shutdown
 mode "$mode_system" {
@@ -313,6 +304,8 @@ set $browser "firefox"
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
 exec --no-startup-id "udiskie -t"
+
+exec_always --no-startup-id ~/.dotfiles/polybar/launch.sh
 # Background
 exec --no-startup-id betterlockscreen -u ~/wallpapers
 exec --no-startup-id betterlockscreen -w
