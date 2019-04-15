@@ -69,7 +69,6 @@ plugins=(
   git
   colored-man-pages
   zsh-autosuggestions
-  calc
   tmux
   encode64
   docker
