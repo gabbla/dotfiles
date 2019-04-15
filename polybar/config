@@ -272,6 +272,9 @@ format-volume = <label-volume> <bar-volume>
 label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
+; Limt the volume at 100% (PA_VOLUME_NORM)
+use-ui-max = false
+
 label-muted = 🔇 muted
 label-muted-foreground = #666
 
