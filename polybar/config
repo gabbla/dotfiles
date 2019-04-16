@@ -57,8 +57,8 @@ font-3 = "Font Awesome 5 Brands:pixelsize=10;0"
 font-4 = "SauceCodePro Nerd Font Mono:style=Regular"
 
 modules-left = bspwm i3
-modules-center = 
-modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-center =
+modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu temperature wlan eth battery date
 
 tray-position = right
 ;tray-padding = 1
