@@ -31,7 +31,7 @@ alert = #bd2c40
 monitor = ${env:MONITOR:}
 width = 100%
 height = 27
-fixed-center = false
+fixed-center = true
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -53,12 +53,50 @@ module-margin-right = 2
 font-0 = misc fixed:pixelsize=10;1
 font-1 = "Font Awesome 5 Free:style=Regular"
 font-2 = "Font Awesome 5 Free Solid:pixelsize=11;2"
-font-3 = "Font Awesome 5 Brands:pixelsize=10;0"
-font-4 = "SauceCodePro Nerd Font Mono:style=Regular"
+font-3 = "Font Awesome 5 Brands:pixelsize=11;0"
 
-modules-left = bspwm i3
-modules-center =
-modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu temperature wlan eth battery date
+modules-left = i3
+modules-center = cpu memory temperature
+modules-right = filesystem xbacklight pulseaudio xkeyboard wlan eth battery date
+
+;tray-padding = 1
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+cursor-click = pointer
+
+[bar/bottom]
+monitor = ${env:MONITOR:}
+width = 100%
+height = 27
+bottom = true
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+; TODO fix fonts
+font-0 = misc fixed:pixelsize=10;1
+font-1 = "Font Awesome 5 Free:style=Regular"
+font-2 = "Font Awesome 5 Free Solid:pixelsize=11;2"
+font-3 = "Font Awesome 5 Brands:pixelsize=11;0"
+
+modules-left = spotify
+modules-center = upspeed downspeed
+modules-right =
 
 tray-position = right
 ;tray-padding = 1
@@ -70,6 +108,31 @@ tray-position = right
 ;override-redirect = true
 
 cursor-click = pointer
+
+[module/upspeed]
+type = internal/network
+interface = wlan0
+label-connected = "%upspeed:7%"
+format-connected = <label-connected>
+format-connected-prefix = 
+format-connected-prefix-foreground = #d81e5b
+
+[module/downspeed]
+type = internal/network
+interface = wlan0
+label-connected = "%downspeed:7%"
+format-connected = <label-connected>
+format-connected-prefix = 
+format-connected-prefix-foreground = #59c9a5
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format-prefix-foreground = #0F0
+format = <label>
+exec = python /opt/git/polybar-spotify/spotify_status.py -f '{artist}: {song}'
+format-underline = #0F0
 
 [module/xwindow]
 type = internal/xwindow
@@ -220,7 +283,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
-label-connected = %essid% %local_ip% %upspeed% %downspeed%
+label-connected = %essid% %local_ip%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
