@@ -51,6 +51,7 @@ let NERDTreeQuitOnOpen = 1
 
 " Custom settings
 source ~/.dotfiles/nvim/vimrc/ack.vim
+source ~/.dotfiles/nvim/vimrc/airline.vim
 source ~/.dotfiles/nvim/vimrc/clang-format.vim
 source ~/.dotfiles/nvim/vimrc/fswitch.vim
 source ~/.dotfiles/nvim/vimrc/instant-markdown.vim
