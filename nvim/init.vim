@@ -44,8 +44,6 @@ source ~/.dotfiles/nvim/vimrc/shortcuts.vim
 source ~/.dotfiles/nvim/vimrc/settings.vim
 
 
-" Start NerdTree
-autocmd vimenter * NERDTree
 " Close vim if onlu NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeQuitOnOpen = 1
