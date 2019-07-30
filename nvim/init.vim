@@ -26,6 +26,7 @@ Plug 'kien/ctrlp.vim'
 " syntax
 Plug 'kergoth/vim-bitbake'
 Plug 'pboettch/vim-cmake-syntax'
+Plug 'mtdl9/vim-log-highlighting'
 
 " TODO sort
 Plug 'roxma/nvim-completion-manager'
