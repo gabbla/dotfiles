@@ -191,8 +191,9 @@ exec --no-startup-id feh --bg-scale $wpdir/wallpaper.jpg
 
 # Screen Mirror
 exec sleep 2 && xrandr --output eDP1 --mode 1920x1080 --output DP1-2 --mode 1920x1080 --same-as eDP1
-# Numlock On 
-exec_always --no-startup-id numlockx on
+
+# Numlock off
+exec_always --no-startup-id numlockx off
 #--------------------------
 
 ################################################################################
