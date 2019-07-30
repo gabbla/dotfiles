@@ -300,9 +300,10 @@ bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures
 set $browser "firefox"
 
 # Autostart
-exec_always --no-startup-id nm-applet
-exec_always --no-startup-id blueman-applet
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 exec --no-startup-id "udiskie -t"
+exec --no-startup-id ~/.dotfiles/wm/bin/startup
 exec_always --no-startup-id ~/.dotfiles/polybar/launch.sh
 
 # Background
