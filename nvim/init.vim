@@ -10,10 +10,12 @@ Plug 'danilo-augusto/vim-afterglow'
 
 " C++
 Plug 'Valloric/YouCompleteMe'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'rhysd/vim-clang-format'
+
 " Markdown
 Plug 'suan/vim-instant-markdown'
+
 " Tools
 Plug 'mileszs/ack.vim'
 Plug 'derekwyatt/vim-fswitch'
