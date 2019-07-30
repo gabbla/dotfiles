@@ -2,6 +2,11 @@ call plug#begin()
 
 " Color themes
 Plug 'morhetz/gruvbox'
+Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'jacoborus/tender.vim' " cpp ok go mhe
+Plug 'joshdick/onedark.vim' " mhe
+Plug 'ajmwagar/vim-deus' " so and so
+Plug 'danilo-augusto/vim-afterglow'
 
 " C++
 Plug 'Valloric/YouCompleteMe'
@@ -33,10 +38,14 @@ Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Theme managment
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 syntax on
-colorscheme gruvbox 
-set background=dark " gruvbox dark mode
+colorscheme tender
+set background=dark
+set termguicolors
 
+" set airline theme
+let g:airline_theme = 'tender'
 
 " Source shortcuts
 source ~/.dotfiles/nvim/vimrc/shortcuts.vim
@@ -61,6 +70,3 @@ source ~/.dotfiles/nvim/vimrc/ycm.vim
 
 " UltiSnips keybindings
 let g:UltiSnipsExpandTrigger="<c-o>"
-
-
-
