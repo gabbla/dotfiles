@@ -121,6 +121,9 @@ export TERM=xterm-256color
 
 export EDITOR="nvim"
 
+export GOBIN="~/go/bin"
+export GOPATH=$(go env GOPATH)
+
 # with spaceship I need a more visible color for zsh autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 
