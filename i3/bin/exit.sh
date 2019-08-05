@@ -18,9 +18,9 @@ case "$1" in
 	hibernate)
 		;;
 	reboot)
-		reboot
+		systemctl reboot
 		;;
 	shutdown)
-		shutdown now
+		systemctl poweroff	
 		;;
 esac
