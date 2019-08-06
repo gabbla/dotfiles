@@ -121,6 +121,7 @@ export TERM=xterm-256color
 
 export EDITOR="nvim"
 
+export PATH="$PATH:/usr/local/go/bin"
 export GOBIN="~/go/bin"
 export GOPATH=$(go env GOPATH)
 
