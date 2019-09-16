@@ -23,6 +23,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'aklt/plantuml-syntax'
 Plug 'kien/ctrlp.vim'
 
+" git
+Plug 'tpope/vim-fugitive'
+Plug 'sodapopcan/vim-twiggy'
+
 " syntax
 Plug 'kergoth/vim-bitbake'
 Plug 'pboettch/vim-cmake-syntax'
@@ -37,7 +41,7 @@ Plug 'wakatime/vim-wakatime'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " Theme managment
