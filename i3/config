@@ -22,6 +22,7 @@ set $mainscreen	DP1-2
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:AppleGaramond Sans 9
+#font pango:Source Code Pro for Powerline, Bold, 10
 #font pango:DejaVu Sans 9
 
 for_window [class="kitty"] border pixel 0
@@ -309,4 +310,6 @@ exec_always --no-startup-id ~/.dotfiles/polybar/launch.sh
 # Background
 exec --no-startup-id betterlockscreen -u ~/wallpapers
 exec --no-startup-id betterlockscreen -w
+
+exec --no-startup-id battery-monitor
 

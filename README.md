@@ -33,3 +33,9 @@ ln -nfs ~/.dotfiles/dunst/dunstrc ~/.config/dunst
 # polybar
 ln -nfs ~/.dotfiles/polybar ~/.config/polybar
 ```
+
+## Dependencise
+
+WIP
+
+- [Silicon](https://github.com/Aloxaf/silicon) used by `vim-silicon`

@@ -5,10 +5,22 @@
 level=$(cat /sys/class/power_supply/BAT0/capacity)
 online=$(cat /sys/class/power_supply/AC/online)
 
-
 COLOR_HIGH="#80f442"
 COLOR_MID="#f4e542"
 COLOR_LOW="#ff0000"
+
+function notify() {
+    notify-sent -u critical "Battery is low!! $level%"
+}
+
+function checkAndNotify() {
+    if [ $level -lt 15 -a ! -f /tmp/.bat15 ]; then
+        touch /tmp/.bat15
+        notify
+    fi
+}
+
+checkAndNotify
 
 if [ $online == 1 ]; then echo -n " ";
 elif [ $level -gt 88 ]; then echo -n "";

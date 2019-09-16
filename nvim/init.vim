@@ -15,6 +15,8 @@ Plug 'rhysd/vim-clang-format'
 
 " Markdown
 Plug 'suan/vim-instant-markdown'
+Plug 'godlygeek/tabular' " must cme before vim-markdown
+Plug 'plasticboy/vim-markdown'
 
 " Tools
 Plug 'mileszs/ack.vim'
@@ -22,6 +24,7 @@ Plug 'derekwyatt/vim-fswitch'
 Plug 'vim-airline/vim-airline'
 Plug 'aklt/plantuml-syntax'
 Plug 'kien/ctrlp.vim'
+Plug 'segeljakt/vim-silicon' " export buffer/selction as pictures
 
 " git
 Plug 'tpope/vim-fugitive'
@@ -31,6 +34,7 @@ Plug 'sodapopcan/vim-twiggy'
 Plug 'kergoth/vim-bitbake'
 Plug 'pboettch/vim-cmake-syntax'
 Plug 'mtdl9/vim-log-highlighting'
+Plug 'chaquotay/ftl-vim-syntax'
 
 " TODO sort
 Plug 'roxma/nvim-completion-manager'
@@ -70,6 +74,7 @@ source ~/.dotfiles/nvim/vimrc/airline.vim
 source ~/.dotfiles/nvim/vimrc/clang-format.vim
 source ~/.dotfiles/nvim/vimrc/fswitch.vim
 source ~/.dotfiles/nvim/vimrc/fugitive.vim
+source ~/.dotfiles/nvim/vimrc/silicon.vim
 source ~/.dotfiles/nvim/vimrc/instant-markdown.vim
 source ~/.dotfiles/nvim/vimrc/nerdtree.vim
 source ~/.dotfiles/nvim/vimrc/ycm.vim
