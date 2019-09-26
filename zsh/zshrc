@@ -125,6 +125,10 @@ export PATH="$PATH:/usr/local/go/bin"
 export GOBIN="~/go/bin"
 export GOPATH=$(go env GOPATH)
 
+# Edit line in vim with ctrl-e:
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
 # with spaceship I need a more visible color for zsh autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 
