@@ -65,4 +65,11 @@ prompt_svn() {
     fi
 }
 
+# Reboot in window. See https://unix.stackexchange.com/questions/43196/how-can-i-tell-grub-i-want-to-reboot-into-windows-before-i-reboot
+win_reboot() {
+    WINDOWS_TITLE=`sudo grep -i 'windows' /boot/grub/grub.cfg|cut -d"'" -f2`
+    sudo grub-reboot "$WINDOWS_TITLE"
+    sudo reboot
+}
+
 #source ~/cntlm_proxy
