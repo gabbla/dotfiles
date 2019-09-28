@@ -192,8 +192,9 @@ exec --no-startup-id feh --bg-scale $wpdir/wallpaper.jpg
 
 # Screen Mirror
 exec sleep 2 && xrandr --output eDP1 --mode 1920x1080 --output DP1-2 --mode 1920x1080 --same-as eDP1
-# Numlock On 
-exec_always --no-startup-id numlockx on
+
+# Numlock off
+exec_always --no-startup-id numlockx off
 #--------------------------
 
 ################################################################################
@@ -300,9 +301,10 @@ bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures
 set $browser "firefox"
 
 # Autostart
-exec_always --no-startup-id nm-applet
-exec_always --no-startup-id blueman-applet
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 exec --no-startup-id "udiskie -t"
+exec --no-startup-id ~/.dotfiles/wm/bin/startup
 exec_always --no-startup-id ~/.dotfiles/polybar/launch.sh
 
 # Background

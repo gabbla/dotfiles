@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Compositor
+compton --config ~/.dotfiles/wm/compton.conf -b
