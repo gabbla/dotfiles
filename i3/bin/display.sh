@@ -1,7 +1,7 @@
 #!/bin/bash
 
-INTERNAL="eDP1"
-EXTERNAL="DP3"
+INTERNAL="eDP-1"
+EXTERNAL="DP-3"
 
 case "$1" in
     i) # internal
