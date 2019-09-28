@@ -57,7 +57,7 @@ font-3 = "Font Awesome 5 Brands:pixelsize=11;0"
 
 modules-left = i3 spotify
 ;modules-center = cpu memory temperature
-modules-right = filesystem xbacklight pulseaudio xkeyboard wlan eth battery date
+modules-right = filesystem xbacklight pulseaudio mx_battery k2_battery xkeyboard wlan eth battery date
 tray-position = center
 
 ;tray-padding = 1
@@ -114,6 +114,14 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
+
+[module/mx_battery]
+type = custom/script
+exec = ~/.dotfiles/polybar/modules/upower/upower.py mouse_dev_F2_B2_22_11_37_09 
+
+[module/k2_battery]
+type = custom/script
+exec = ~/.dotfiles/polybar/modules/upower/upower.py keyboard_hid_dco2co26ocdo24ocf_battery 
 
 [module/filesystem]
 type = internal/fs
