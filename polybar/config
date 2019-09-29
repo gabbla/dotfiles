@@ -118,10 +118,12 @@ label-indicator-underline = ${colors.secondary}
 [module/mx_battery]
 type = custom/script
 exec = ~/.dotfiles/polybar/modules/upower/upower.py mouse_dev_F2_B2_22_11_37_09 
+interval = 60
 
 [module/k2_battery]
 type = custom/script
 exec = ~/.dotfiles/polybar/modules/upower/upower.py keyboard_hid_dco2co26ocdo24ocf_battery 
+interval = 60
 
 [module/filesystem]
 type = internal/fs
