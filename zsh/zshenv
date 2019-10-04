@@ -73,3 +73,5 @@ win_reboot() {
 }
 
 #source ~/cntlm_proxy
+# bat theme
+export BAT_THEME="Monokai Extended Bright"
