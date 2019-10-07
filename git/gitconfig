@@ -1,0 +1,21 @@
+################################################################################
+# Git config
+################################################################################
+
+[user]
+	name = Gabriele Zampieri
+	email = zampierigabriele.ist@gmail.com
+[push]
+	default = simple
+[core]
+    # Require bat https://github.com/sharkdp/bat
+	pager = bat --language patch --plain
+[color]
+	ui = true
+[color "diff"]
+	meta = yellow
+	frag = cyan bold
+	commit = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
