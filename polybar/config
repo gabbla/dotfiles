@@ -57,7 +57,7 @@ font-3 = "Font Awesome 5 Brands:pixelsize=11;0"
 
 modules-left = i3 spotify
 ;modules-center = cpu memory temperature
-modules-right = filesystem xbacklight pulseaudio mx_battery k2_battery xkeyboard wlan eth battery date
+modules-right = filesystem xbacklight pulseaudio-control mx_battery k2_battery xkeyboard wlan eth battery date
 tray-position = center
 
 ;tray-padding = 1
@@ -314,6 +314,21 @@ format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
 label = %date% %time%
+
+[module/pulseaudio-control]
+type = custom/script
+tail = true
+label=%output%
+format-underline = #0a6cf5
+
+exec = ~/.dotfiles/polybar/modules/polybar-pulseaudio-control/pulseaudio-control.sh --listen
+click-right = exec pavucontrol &
+click-left = ~/.dotfiles/polybar/modules/polybar-pulseaudio-control/pulseaudio-control.sh --togmute
+click-middle = ~/.dotfiles/polybar/modules/polybar-pulseaudio-control/pulseaudio-control.sh --change
+scroll-up = ~/.dotfiles/polybar/modules/polybar-pulseaudio-control/pulseaudio-control.sh --up
+scroll-down = ~/.dotfiles/polybar/modules/polybar-pulseaudio-control/pulseaudio-control.sh --down
+label-padding = 2
+label-foreground = ${colors.foreground}
 
 [module/pulseaudio]
 type = internal/pulseaudio
