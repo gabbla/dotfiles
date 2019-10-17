@@ -37,7 +37,9 @@ Plug 'mtdl9/vim-log-highlighting'
 Plug 'chaquotay/ftl-vim-syntax'
 
 " TODO sort
-Plug 'roxma/nvim-completion-manager'
+" Deprecated: replaced by https://github.com/ncm2/ncm2
+" TODO fix
+"Plug 'roxma/nvim-completion-manager'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'ErichDonGubler/vim-sublime-monokai'
