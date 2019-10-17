@@ -32,6 +32,13 @@ ln -nfs ~/.dotfiles/dunst/dunstrc ~/.config/dunst
 
 # polybar
 ln -nfs ~/.dotfiles/polybar ~/.config/polybar
+
+# rofi-pass (depends on [pass](https://www.passwordstore.org/) and
+[rofi-pass](https://github.com/carnager/rofi-pass)
+ln -nfs ~/.dotfiles/rofi-pass/config ~/.config/rofi-pass/config
+
+#git
+ln -nfs ~/.dotfiles/git/gitconfig ~/.gitconfig
 ```
 
 ## Dependencise

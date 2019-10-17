@@ -72,4 +72,10 @@ win_reboot() {
     sudo reboot
 }
 
-#source ~/cntlm_proxy
+# bat theme
+export BAT_THEME="Monokai Extended Bright"
+
+# diff decorator using bat
+alias decor='bat --language patch --plain'
+
+source ~/cntlm_proxy
