@@ -24,16 +24,8 @@ set wildmode=list:longest,full
 
 set noswapfile " disable swapfile
 
-let myUndoDir='/tmp/.nvim'
 set undofile " Keep undo history
-set undodir=myUndoDir
-augroup Mkdir
-  autocmd!
-  autocmd VimEnter *
-    \ if !isdirectory(myUndoDir) |
-        \ call mkdir(myUndoDir) |
-    \ endif
-augroup END
+set undodir=/tmp
 
 " Highlight extra whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
