@@ -1,1 +1,1 @@
-/home/gabbla/.dotfiles/zsh/oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme
+spaceship-prompt/spaceship.zsh-theme
