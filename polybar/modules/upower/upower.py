@@ -13,7 +13,7 @@
 # Example in polybar/config:
 # [module/mx_battery]
 # type = custom/script
-# exec = ~/.dotfiles/polybar/modules/upower/upower.py mouse_dev_F2_B2_22_11_37_09 
+# exec = ~/.dotfiles/polybar/modules/upower/upower.py mouse_dev_F2_B2_22_11_37_09 "label"
 
 import dbus
 import sys
