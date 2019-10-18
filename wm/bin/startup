@@ -2,3 +2,7 @@
 
 # Compositor
 compton --config ~/.dotfiles/wm/compton.conf -b
+
+# keyboard rate and delay settings
+# xset r rate [delay] [rate]
+xset r rate 250 25
