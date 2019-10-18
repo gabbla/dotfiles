@@ -30,3 +30,6 @@ map <f9> :make<CR>
 
 " Clear highlighted search
 nmap <silent> // :nohlsearch<CR>
+
+" Enter shell command
+nmap <leader>S :!<Space>
