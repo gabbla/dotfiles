@@ -73,6 +73,7 @@ plugins=(
   encode64
   docker
   svn
+  zsh-syntax-highlighting
 )
 
 SPACESHIP_EXIT_CODE_SHOW=true
