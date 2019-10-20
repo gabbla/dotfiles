@@ -8,12 +8,12 @@
 # Script configuration (more info in the README)
 OSD="no"  # On Screen Display message for KDE if enabled
 INC=2  # Increment when lowering/rising the volume
-MAX_VOL=130  # Maximum volume
+MAX_VOL=100  # Maximum volume
 AUTOSYNC="no"  # All programs have the same volume if enabled
-VOLUME_ICONS=( "# " "# " "# " )  # Volume icons array, from lower volume to higher
-MUTED_ICON="# "  # Muted volume icon
+VOLUME_ICONS=( " " " " "  " )  # Volume icons array, from lower volume to higher
+MUTED_ICON="  "  # Muted volume icon
 MUTED_COLOR="%{F#6b6b6b}"  # Color when the audio is muted
-DEFAULT_SINK_ICON="# "  # The default sink icon if a custom one isn't found
+DEFAULT_SINK_ICON=" "  # The default sink icon if a custom one isn't found
 CUSTOM_SINK_ICONS=(  )  # Custom sink icons in index of sink order
 NOTIFICATIONS="no"  # Notifications when switching sinks if enabled
 SINK_BLACKLIST=(  )  # Index blacklist for sinks when switching between them
@@ -186,7 +186,7 @@ function listen {
 }
 
 function output() {
-    if [ -z $(pgrep pulseaudio) ]; then echo "Pulseaudio not running"; return 1; fi
+    if [ -z "$(pgrep pulseaudio)" ]; then echo "Pulseaudio not running"; return 1; fi
 
     getCurSink
     getCurVol
