@@ -12,6 +12,7 @@ Plug 'danilo-augusto/vim-afterglow'
 Plug 'Valloric/YouCompleteMe'
 "Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'rhysd/vim-clang-format'
+Plug 'preservim/nerdcommenter'
 
 " Markdown
 Plug 'suan/vim-instant-markdown'
@@ -78,6 +79,7 @@ source ~/.dotfiles/nvim/vimrc/fswitch.vim
 source ~/.dotfiles/nvim/vimrc/fugitive.vim
 source ~/.dotfiles/nvim/vimrc/silicon.vim
 source ~/.dotfiles/nvim/vimrc/instant-markdown.vim
+source ~/.dotfiles/nvim/vimrc/nerdcommenter.vim
 source ~/.dotfiles/nvim/vimrc/nerdtree.vim
 source ~/.dotfiles/nvim/vimrc/ycm.vim
 
