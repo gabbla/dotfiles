@@ -24,8 +24,9 @@ Plug 'mileszs/ack.vim'
 Plug 'derekwyatt/vim-fswitch'
 Plug 'vim-airline/vim-airline'
 Plug 'aklt/plantuml-syntax'
-Plug 'kien/ctrlp.vim'
 Plug 'segeljakt/vim-silicon' " export buffer/selction as pictures
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " git
 Plug 'tpope/vim-fugitive'
