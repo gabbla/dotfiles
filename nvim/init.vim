@@ -40,6 +40,7 @@ Plug 'kergoth/vim-bitbake'
 Plug 'pboettch/vim-cmake-syntax'
 Plug 'mtdl9/vim-log-highlighting'
 Plug 'chaquotay/ftl-vim-syntax'
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 " TODO sort
 " Deprecated: replaced by https://github.com/ncm2/ncm2
@@ -87,6 +88,7 @@ source ~/.dotfiles/nvim/vimrc/silicon.vim
 source ~/.dotfiles/nvim/vimrc/instant-markdown.vim
 source ~/.dotfiles/nvim/vimrc/nerdcommenter.vim
 source ~/.dotfiles/nvim/vimrc/nerdtree.vim
+source ~/.dotfiles/nvim/vimrc/vim-cpp-enhanced-highlight.vim
 source ~/.dotfiles/nvim/vimrc/ycm.vim
 
 
