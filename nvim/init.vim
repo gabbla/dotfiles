@@ -47,15 +47,15 @@ Plug 'honza/vim-snippets'
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'wakatime/vim-wakatime'
 Plug 'airblade/vim-gitgutter'
+Plug 'crusoexia/vim-monokai'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
 
 " Theme managment
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 syntax on
-colorscheme tender
+colorscheme monokai
 set background=dark
 set termguicolors
 
