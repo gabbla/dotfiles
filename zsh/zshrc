@@ -134,3 +134,5 @@ bindkey '^e' edit-command-line
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/italia.texa.org/gzampieri/.vimpkg/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
