@@ -25,6 +25,7 @@ Plug 'derekwyatt/vim-fswitch'
 Plug 'vim-airline/vim-airline'
 Plug 'aklt/plantuml-syntax'
 Plug 'segeljakt/vim-silicon' " export buffer/selction as pictures
+Plug 'unblevable/quick-scope'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -69,6 +70,8 @@ source ~/.dotfiles/nvim/vimrc/shortcuts.vim
 " Source settings from settings.vim
 source ~/.dotfiles/nvim/vimrc/settings.vim
 
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " Close vim if onlu NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
