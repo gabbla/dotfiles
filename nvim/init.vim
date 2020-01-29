@@ -30,6 +30,8 @@ Plug 'junegunn/fzf.vim'
 
 " git
 Plug 'tpope/vim-fugitive'
+Plug 'shumphrey/fugitive-gitlab.vim'
+Plug 'junegunn/gv.vim'
 Plug 'sodapopcan/vim-twiggy'
 
 " syntax
