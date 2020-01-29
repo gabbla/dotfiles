@@ -15,9 +15,9 @@ Plug 'rhysd/vim-clang-format'
 Plug 'preservim/nerdcommenter'
 
 " Markdown
-Plug 'suan/vim-instant-markdown'
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'godlygeek/tabular' " must cme before vim-markdown
-Plug 'plasticboy/vim-markdown'
+"Plug 'plasticboy/vim-markdown'
 
 " Tools
 Plug 'mileszs/ack.vim'
