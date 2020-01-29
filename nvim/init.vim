@@ -84,10 +84,11 @@ source ~/.dotfiles/nvim/vimrc/airline.vim
 source ~/.dotfiles/nvim/vimrc/clang-format.vim
 source ~/.dotfiles/nvim/vimrc/fswitch.vim
 source ~/.dotfiles/nvim/vimrc/fugitive.vim
-source ~/.dotfiles/nvim/vimrc/silicon.vim
+source ~/.dotfiles/nvim/vimrc/fzf.vim
 source ~/.dotfiles/nvim/vimrc/instant-markdown.vim
 source ~/.dotfiles/nvim/vimrc/nerdcommenter.vim
 source ~/.dotfiles/nvim/vimrc/nerdtree.vim
+source ~/.dotfiles/nvim/vimrc/silicon.vim
 source ~/.dotfiles/nvim/vimrc/vim-cpp-enhanced-highlight.vim
 source ~/.dotfiles/nvim/vimrc/ycm.vim
 
