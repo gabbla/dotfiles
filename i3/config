@@ -68,7 +68,7 @@ bindsym $mod+Shift+d exec i3-dmenu-desktop
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 #rofi -show drun installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -i -p \"Run:\" -show-icons -config ~/.dotfiles/rofi/sidetab.rasi'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -i -p \"Run:\" -show-icons -config ~/.dotfiles/rofi/breeze-dark.rasi'
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -p \"Run:\" -fn 'DejaVu Sans-10' -l 20"
 
 # change focus
