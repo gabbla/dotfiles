@@ -39,6 +39,10 @@ ln -nfs ~/.dotfiles/rofi-pass/config ~/.config/rofi-pass/config
 
 #git
 ln -nfs ~/.dotfiles/git/gitconfig ~/.gitconfig
+
+# TLP (Linux Advanced Power Management)
+mv /etc/tlp.conf /etc/tlp.conf.backup # backup the shipped one
+ln -ns ~/.dotfiles/tlp.conf /etc
 ```
 
 ## Dependencise
