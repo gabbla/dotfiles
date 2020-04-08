@@ -60,6 +60,8 @@ bindsym $mod+Shift+q kill
 
 # Start rofi in window switcher
 bindsym $mod+p exec --no-startup-id rofi -show window -config ~/.dotfiles/rofi/sidetab.rasi
+# Start rofi-pass
+bindsym Shift+$mod+p exec --no-startup-id rofi-pass
 
 # Start teiler
 bindsym $mod+Shift+s exec --no-startup-id teiler
