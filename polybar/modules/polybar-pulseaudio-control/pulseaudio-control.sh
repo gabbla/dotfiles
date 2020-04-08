@@ -7,19 +7,16 @@
 
 # Script configuration (more info in the README)
 OSD="no"  # On Screen Display message for KDE if enabled
-INC=2  # Increment when lowering/rising the volume
+INC=5  # Increment when lowering/rising the volume
 MAX_VOL=100  # Maximum volume
 AUTOSYNC="no"  # All programs have the same volume if enabled
-VOLUME_ICONS=( " " " " "  " )  # Volume icons array, from lower volume to higher
-MUTED_ICON="  "  # Muted volume icon
+VOLUME_ICONS=( "" "" "" )  # Volume icons array, from lower volume to higher
+MUTED_ICON="# "  # Muted volume icon
 MUTED_COLOR="%{F#6b6b6b}"  # Color when the audio is muted
-DEFAULT_SINK_ICON=" "  # The default sink icon if a custom one isn't found
+DEFAULT_SINK_ICON="# "  # The default sink icon if a custom one isn't found
 CUSTOM_SINK_ICONS=(  )  # Custom sink icons in index of sink order
-NOTIFICATIONS="no"  # Notifications when switching sinks if enabled
+NOTIFICATIONS="yes"  # Notifications when switching sinks if enabled
 SINK_BLACKLIST=(  )  # Index blacklist for sinks when switching between them
-
-# Environment constants
-LANGUAGE=en_US  # Functions of this scripts depends on English outputs of pactl
 
 # Global script variables
 isMuted="no"
@@ -161,7 +158,7 @@ function listen {
     firstrun=0
 
     pactl subscribe 2>/dev/null | {
-        while true; do 
+        while true; do
             {
                 # If this is the first time just continue
                 # and print the current state
