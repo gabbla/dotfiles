@@ -45,7 +45,9 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 " Deprecated: replaced by https://github.com/ncm2/ncm2
 " TODO fix
 "Plug 'roxma/nvim-completion-manager'
-Plug 'SirVer/ultisnips'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+"Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'wakatime/vim-wakatime'
@@ -96,6 +98,7 @@ source ~/.dotfiles/nvim/vimrc/silicon.vim
 source ~/.dotfiles/nvim/vimrc/vim-cpp-enhanced-highlight.vim
 source ~/.dotfiles/nvim/vimrc/ycm.vim
 
+set tags=./.tags;,.tags;
 
 " UltiSnips keybindings
 let g:UltiSnipsExpandTrigger="<c-o>"
