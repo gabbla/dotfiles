@@ -27,6 +27,8 @@ font pango:AppleGaramond Sans 9
 
 for_window [class="kitty"] border pixel 0
 for_window [class="Firefox"] border pixel 0
+# Microsoft Teams notification popup are spawned as new windows, make them float
+for_window [title="Microsoft Teams Notification"] floating enable
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
