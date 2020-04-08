@@ -43,10 +43,15 @@ ln -nfs ~/.dotfiles/git/gitconfig ~/.gitconfig
 # TLP (Linux Advanced Power Management)
 mv /etc/tlp.conf /etc/tlp.conf.backup # backup the shipped one
 ln -ns ~/.dotfiles/tlp.conf /etc
+
+# xbindkeys
+ln -ns ~/.dotfiles/xbindkeys ~/.xbindkeys
 ```
 
 ## Dependencise
 
 WIP
+
+- light-locker (xbindkeys)
 
 - [Silicon](https://github.com/Aloxaf/silicon) used by `vim-silicon`

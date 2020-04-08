@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+# This scripts depends on dbus-python package
 # Usage: upower.py <device> <icon>
 # This script is meant to be used as polybar module. It prints the 'percentage'
 # property of a device to stdout. Nothing elaborated, just read the property

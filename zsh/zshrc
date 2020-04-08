@@ -133,9 +133,12 @@ bindkey '^e' edit-command-line
 # with spaceship I need a more visible color for zsh autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 
+<<<<<<< Updated upstream
 # Disable the caps lock (to enable: setxkbmap -option)
 setxkbmap -option ctrl:nocaps
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/italia.texa.org/gzampieri/.vimpkg/bin"
+# rust binaries
+export PATH="$PATH:/home/gabbla/.cargo/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

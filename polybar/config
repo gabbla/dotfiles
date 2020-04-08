@@ -28,7 +28,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/top]
-monitor = ${env:MONITOR:}
+monitor = ${env:MONITOR:DP1}
 width = 100%
 height = 27
 fixed-center = true
@@ -55,8 +55,10 @@ font-1 = "Font Awesome 5 Free:style=Regular"
 font-2 = "Font Awesome 5 Free Solid:pixelsize=11;2"
 font-3 = "Font Awesome 5 Brands:pixelsize=11;0"
 
-modules-left = i3 spotify
+modules-left = i3
+;modules-left = i3 spotify
 ;modules-center = cpu memory temperature
+;modules-right = filesystem xbacklight mx_battery k2_battery xkeyboard wlan eth battery date
 modules-right = filesystem xbacklight pulseaudio-control mx_battery k2_battery xkeyboard wlan eth battery date
 tray-position = center
 

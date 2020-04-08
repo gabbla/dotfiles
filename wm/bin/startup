@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Compositor
-compton --config ~/.dotfiles/wm/compton.conf -b
+compton -b
+
+# Light-locker
+light-locker &
 
 # keyboard rate and delay settings
 # xset r rate [delay] [rate]
