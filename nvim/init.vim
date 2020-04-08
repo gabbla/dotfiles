@@ -54,6 +54,8 @@ Plug 'crusoexia/vim-monokai'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" Must be loaded as last plugin
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Theme managment
