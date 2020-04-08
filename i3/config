@@ -27,6 +27,8 @@ font pango:AppleGaramond Sans 9
 
 for_window [class="kitty"] border pixel 0
 for_window [class="Firefox"] border pixel 0
+# Microsoft Teams notification popup are spawned as new windows, make them float
+for_window [title="Microsoft Teams Notification"] floating enable
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -57,7 +59,10 @@ bindsym Shift+$mod+Return exec $terminal -e bash
 bindsym $mod+Shift+q kill
 
 # Start rofi in window switcher
-bindsym $mod+p exec --no-startup-id rofi -show window -config ~/.dotfiles/rofi/sidetab.rasi
+bindsym $mod+p exec --no-startup-id rofi -show window -config ~/.dotfiles/rofi/breeze-dark.rasi
+
+# Start rofi-pass
+bindsym Shift+$mod+p exec --no-startup-id rofi-pass
 
 # Start teiler
 bindsym $mod+Shift+s exec --no-startup-id teiler

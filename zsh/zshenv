@@ -8,6 +8,7 @@ alias dot="cd ~/.dotfiles && ll"
 alias opt="cd /opt"
 alias prj="cd ~/projects"
 alias mk5="cd ~/projects/tmd_mk5"
+alias mk0="cd ~/projects/tmd_mk0"
 alias wrk="cd ~/workspaces"
 mdd() { mkdir -p $1 && cd $1 }
 MDD() { TEMP=$(mktemp -d); cd $TEMP }
