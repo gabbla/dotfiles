@@ -13,9 +13,7 @@ set -g status-right-length 150
 set -g status-interval 5
 
 # Status bar color
-set-option -g status-fg $tm_color_active
-set-option -g status-bg $tm_color_background
-set-option -g status-attr default
+set-option -g status-style fg=$tm_color_active,bg=$tm_color_active,default
 
 # Default window
 set-window-option -g window-status-fg $tm_color_inactive
