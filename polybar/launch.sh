@@ -1,15 +1,31 @@
 #!/usr/bin/env bash
+# Put the tray on the external monitor, if connected
+# See: https://github.com/polybar/polybar/issues/763
+(
+  flock 200
 
-# Terminate already running bar instances
-killall -q polybar
+  killall -q polybar
 
-# Wait until the processes have been shut down
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+  while pgrep -u $UID -x polybar > /dev/null; do sleep 0.5; done
 
-if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --reload top &
+  outputs=$(xrandr --query | grep " connected" | cut -d" " -f1)
+  # Internal monitor
+  tray_output=eDP-1
+
+  for m in $outputs; do
+    if [[ $m == "DP-1" ]]; then
+        tray_output=$m
+    fi
   done
-else
-  polybar --reload top > /tmp/polybar.log &
-fi
+
+  for m in $outputs; do
+    export MONITOR=$m
+    export TRAY_POSITION=none
+    if [[ $m == $tray_output ]]; then
+      TRAY_POSITION=right
+    fi
+
+    polybar --reload main </dev/null >/var/tmp/polybar-$m.log 2>&1 200>&- &
+    disown
+  done
+) 200>/var/tmp/polybar-launch.lock
