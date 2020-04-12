@@ -7,3 +7,6 @@
 [submodule "zsh/oh-my-zsh/themes/spaceship-theme"]
 	path = zsh/oh-my-zsh/themes/spaceship-theme
 	url = git@github.com:denysdovhan/spaceship-prompt.git
+[submodule "polybar/modules/polybar-spotify"]
+	path = polybar/modules/polybar-spotify
+	url = git@github.com:Jvanrhijn/polybar-spotify.git
