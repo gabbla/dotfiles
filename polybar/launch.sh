@@ -10,7 +10,7 @@
 
   outputs=$(xrandr --query | grep " connected" | cut -d" " -f1)
   # Internal monitor
-  tray_output=eDP-1
+  tray_output="eDP-1"
 
   for m in $outputs; do
     if [[ $m == "DP-1" ]]; then
@@ -25,7 +25,7 @@
       TRAY_POSITION=right
     fi
 
-    polybar --reload main </dev/null >/var/tmp/polybar-$m.log 2>&1 200>&- &
+    polybar --reload top </dev/null >/var/tmp/polybar-$m.log 2>&1 200>&- &
     disown
   done
 ) 200>/var/tmp/polybar-launch.lock
