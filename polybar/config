@@ -199,7 +199,7 @@ interval = 1
 format-prefix = "| "
 format = <label>
 format-foreground = ${colors.secondary}
-exec = python ~/.dotfiles/polybar/modules/polybar-spotify/spotify_status.py -f '{play_pause} {artist} - {song}' -p ','
+exec = python ~/.dotfiles/polybar/modules/polybar-spotify/spotify_status.py -f '{play_pause} {artist} - {song}' -p ','
 
 ################################################################################
 # Power supply
