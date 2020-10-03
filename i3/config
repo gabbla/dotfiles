@@ -292,10 +292,15 @@ mode "$mode_display" {
 bindsym Control+Shift+d mode "$mode_display"
 
 # Spotify
+# Legacy support
 bindsym Ctrl+$mod+p exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl prev
 bindsym Ctrl+$mod+n exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl next
 bindsym Ctrl+$mod+space exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl play
+# Multimedia key support
 bindsym XF86AudioStop exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl stop
+bindsym XF86AudioPause exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl play
+bindsym XF86AudioPrev exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl prev
+bindsym XF86AudioNext exec --no-startup-id ~/.dotfiles/i3/bin/spotify_ctl next
 
 # Turn on Trust kb LED
 bindsym Ctrl+Shift+l exec --no-startup-id xset led named "Scroll Lock"
