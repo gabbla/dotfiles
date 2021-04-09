@@ -141,3 +141,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 export PATH="$PATH:/home/gabbla/.cargo/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+RUST_ENV="$HOME/.cargo/env"
+[ -f $RUST_ENV ] && source $RUST_ENV
