@@ -53,5 +53,6 @@ ln -ns ~/.dotfiles/xbindkeys ~/.xbindkeys
 WIP
 
 - light-locker (xbindkeys)
-
 - [Silicon](https://github.com/Aloxaf/silicon) used by `vim-silicon`
+- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+- [plug](https://github.com/junegunn/vim-plug) used by `nvim`

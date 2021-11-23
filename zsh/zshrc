@@ -124,7 +124,7 @@ export EDITOR="nvim"
 
 export PATH="$PATH:/usr/local/go/bin"
 export GOBIN="~/go/bin"
-export GOPATH=$(go env GOPATH)
+which go > /dev/null && export GOPATH=$(go env GOPATH)
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
@@ -141,3 +141,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 export PATH="$PATH:/home/gabbla/.cargo/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+RUST_ENV="$HOME/.cargo/env"
+[ -f $RUST_ENV ] && source $RUST_ENV

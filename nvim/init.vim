@@ -12,6 +12,9 @@ Plug 'danilo-augusto/vim-afterglow'
 Plug 'rhysd/vim-clang-format'
 Plug 'preservim/nerdcommenter'
 
+" Rust
+Plug 'rust-lang/rust.vim'
+
 " Markdown
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'godlygeek/tabular' " must cme before vim-markdown
