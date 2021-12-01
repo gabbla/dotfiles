@@ -10,3 +10,6 @@
 [submodule "polybar/modules/polybar-spotify"]
 	path = polybar/modules/polybar-spotify
 	url = git@github.com:Jvanrhijn/polybar-spotify.git
+[submodule "zsh/oh-my-zsh/plugins/git-flow-completion"]
+	path = zsh/oh-my-zsh/plugins/git-flow-completion
+	url = git@github.com:bobthecow/git-flow-completion.git
