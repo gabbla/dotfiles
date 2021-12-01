@@ -66,7 +66,8 @@ font-1 = "Font Awesome 5 Free Solid:pixelsize=11;0"
 font-2 = "Font Awesome 5 Brands:pixelsize=11"
 # Modules
 modules-left = i3 spotify
-modules-right = filesystem xbacklight pulseaudio cpu memory wlan_xps wlan eth mx_battery k2_battery battery date
+modules-center = date
+modules-right = filesystem xbacklight pulseaudio cpu memory wlan_xps wlan eth mx_battery k2_battery battery
 tray-position = ${env:TRAY_POSITION:center}
 
 ################################################################################
@@ -237,7 +238,8 @@ animation-charging-framerate = 750
 
 [module/mx_battery]
 type = custom/script
-exec = ~/.dotfiles/polybar/modules/upower/upower.py mouse_dev_F2_B2_22_11_37_0E 
+exec = ~/.dotfiles/polybar/modules/upower/upower.py battery_hidpp_battery_1 
+#exec = ~/.dotfiles/polybar/modules/upower/upower.py mouse_dev_F2_B2_22_11_37_0E 
 interval = 60
 
 [module/k2_battery]

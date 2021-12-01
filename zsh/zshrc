@@ -67,6 +67,7 @@ fi
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  git-flow
   colored-man-pages
   zsh-autosuggestions
   tmux

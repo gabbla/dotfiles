@@ -30,6 +30,7 @@ Plug 'unblevable/quick-scope'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 
 " git
 Plug 'tpope/vim-fugitive'
@@ -50,8 +51,8 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 "Plug 'roxma/nvim-completion-manager'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
-"Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
 Plug 'ErichDonGubler/vim-sublime-monokai'
 "Plug 'wakatime/vim-wakatime'
 Plug 'airblade/vim-gitgutter'
