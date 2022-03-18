@@ -144,3 +144,7 @@ export PATH="$PATH:/home/gabbla/.cargo/bin"
 
 RUST_ENV="$HOME/.cargo/env"
 [ -f $RUST_ENV ] && source $RUST_ENV
+
+# If batcat is installed alias it to cat
+[[ $(command -v batcat) ]] && alias cat='batcat --paging never --plain'
+
