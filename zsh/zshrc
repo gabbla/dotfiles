@@ -74,6 +74,7 @@ plugins=(
   docker
   svn
   zsh-syntax-highlighting
+  git-flow-completion
 )
 
 SPACESHIP_EXIT_CODE_SHOW=true
