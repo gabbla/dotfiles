@@ -1,4 +1,4 @@
-# Clock
+# vim: syntax=tmux
 
 tm_color_active=colour40
 tm_color_inactive=colour3
