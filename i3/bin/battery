@@ -2,8 +2,15 @@
 
 # supply any argument to print the color for i3blocks
 
-level=$(cat /sys/class/power_supply/BAT0/capacity)
-online=$(cat /sys/class/power_supply/AC/online)
+root="/sys/class/power_supply"
+
+# Check if the pc has a battery
+if [ ! -d "$root/BAT*" ]; then
+    exit 0
+fi
+
+level="$(cat $root/BAT0/capacity)"
+online="$(cat $root/AC/online)"
 
 COLOR_HIGH="#80f442"
 COLOR_MID="#f4e542"
@@ -27,7 +34,7 @@ elif [ $level -gt 88 ]; then echo -n "";
 elif [ $level -gt 88 ]; then echo -n "";
 elif [ $level -gt 62 ]; then echo -n "";
 elif [ $level -gt 37 ]; then echo -n "";
-elif [ $level -gt 0 ]; then echo -n ""; 
+elif [ $level -gt 0 ]; then echo -n "";
 fi
 
 echo " ${level}%"
