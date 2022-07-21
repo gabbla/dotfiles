@@ -24,10 +24,6 @@ set -g window-status-format "#I #W"
 set-window-option -g window-status-format '#[fg=colour15,bg=colour33] #I #[fg=colour16,bg=colour31] #W '
 set-window-option -g window-status-current-format '#[fg=colour15,bg=colour1,bold] #I #[fg=colour16,bg=colour160,none] #W '
 
-# Remap split to | and - 
-bind-key | split-window -h
-bind-key - split-window -v
-
 # pane number display
 set-option -g display-panes-active-colour $tm_color_active
 set-option -g display-panes-colour $tm_color_inactive
