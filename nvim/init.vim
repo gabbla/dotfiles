@@ -44,6 +44,7 @@ Plug 'pboettch/vim-cmake-syntax'
 Plug 'mtdl9/vim-log-highlighting'
 Plug 'chaquotay/ftl-vim-syntax'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'elkowar/yuck.vim'
 
 " TODO sort
 " Deprecated: replaced by https://github.com/ncm2/ncm2
