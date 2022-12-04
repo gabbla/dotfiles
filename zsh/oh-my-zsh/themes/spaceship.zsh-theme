@@ -1,1 +1,0 @@
-spaceship-theme/spaceship.zsh-theme
