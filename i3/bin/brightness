@@ -1,6 +1,0 @@
-#!/bin/bash
-
-LVL=$( xbacklight -get | cut -d "." -f 1 )
-
-echo -n ""
-echo "$LVL%"
