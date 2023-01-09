@@ -56,7 +56,7 @@ ZSH_THEME="spaceship"
 ZSH_CUSTOM=~/.dotfiles/zsh/oh-my-zsh
 
 if [ "${ZSH_NO_TMUX}" != "true" ]; then
-  ZSH_TMUX_AUTOSTART=true
+  ZSH_TMUX_AUTOSTART=false
   ZSH_TMUX_AUTOCONNECT=false
 fi
 
