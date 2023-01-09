@@ -15,3 +15,10 @@ cd ~/.dotfiles
 
 stow nvim
 ```
+
+## Fonts
+
+The following fonts are used across the configuration:
+
+- Fira Code (`ttf-fira-code`)
+- Hack Nerd (`ttf-hack-nerd`)
